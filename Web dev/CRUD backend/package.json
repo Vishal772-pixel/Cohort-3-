@@ -1,0 +1,22 @@
+{
+  "name": "crud-backend",
+  "version": "1.0.0",
+  "description": "This Folder will contain CRUD operation for Eccomerce website ..so that it can be used anywhere in any eccomerce project",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "jwtoken": "^0.0.0",
+    "mongoose": "^8.15.1"
+  }
+}
