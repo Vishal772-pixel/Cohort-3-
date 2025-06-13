@@ -3,16 +3,16 @@ import {
   getUserProfile,
   getUserOrders,
   updateUserProfile,
-} from "../controllers/user.controller.js";
-import { protect } from "../middleware/auth.middleware.js";
+} from "../controller/user.controller.js";
+import {protect} from "../middleware/auth.middleware.js";
 
-const router = express.Router();
+const userRoutes = express.Router();
 
 
 // Protect middleware ko call karke use kiya hai , that to use all this route ...user have to go through condition on protect Middleware
 
-router.get("/profile", protect, getUserProfile);
-router.get("/orders", protect, getUserOrders);
-router.put("/update", protect, updateUserProfile);
+userRoutes.get("/profile", protect, getUserProfile);
+userRoutes.get("/orders", protect, getUserOrders);
+userRoutes.put("/update", protect, updateUserProfile);
 
-export default router;
+export default userRoutes;

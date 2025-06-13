@@ -1,6 +1,7 @@
-import asyncHandler from "express-async-handler";
-import User from "../models/User.js";
-import Order from "../models/Order.js";
+import asyncHandler from "express-async-handler"; //npm install express-async-handler
+
+import User from "../Model/user.model.js";
+import Order from "../Model/Order.model.js";
 
 // @desc    Get logged-in user's profile
 // @route   GET /api/user/profile
